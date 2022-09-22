@@ -19,6 +19,22 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 <html>
   <body>
+    <script type="module">
+      const rootDiv = document.createElement('div')
+      rootDiv.setAttribute('id', 'root')
+      document.body.append(rootDiv)
+
+      const myDiv = document.createElement('div')
+
+      myDiv.textContent = "Hello World!"
+      myDiv.classList.add("container")
+
+      rootDiv.append(myDiv)
+    </script>
+  </body>
+</html>
+<!-- <html>
+  <body>
     <div id="root">
       <script type="module">
         const myDiv = document.createElement('div')
@@ -28,4 +44,4 @@
       </script>
     </div>
   </body>
-</html>
+</html> -->
